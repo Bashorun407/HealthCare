@@ -1,0 +1,26 @@
+#!/usr/bin/html
+
+<!DOCTYPE html>
+<html>
+	  <head>
+		      <title>Register</title>
+	  </head>
+	  <body>
+		      <h1>Register</h1>
+		      <form method="POST">
+			      <label>Name:</label><input type="text" name="name"><br>
+			      <label>Age:</label><input type="text" name="age"><br>
+			      <label>Gender:</label>
+			      <input type="radio" name="gender" value="male">Male
+			      <input type="radio" name="gender" value="female">Female<br>
+			      <label>Contact Info:</label><input type="text" name="contact_info"><br>
+			      <label>Medical History:</label><input type="text" name="medical_history"><br>
+			      <label>Prescription Info:</label><input type="text" name="prescription_info"><br>
+			      <input type="submit" value="Submit">
+		      </form>
+	  </body>
+</html>
+
+<!--The register() function handles both GET and POST requests to the '/register' URL. When a GET request is made, it renders the 'register.html' template, which displays a form for the user to fill out. When a POST request is made (i.e. when the form is submitted), it retrieves the form data, creates a new Patient object, adds the patient to the database, and renders the 'success.html' template to indicate that the registration was successful. -->
+
+
